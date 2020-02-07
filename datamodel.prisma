@@ -1,0 +1,11 @@
+type User {
+  id: ID! @id
+  name: String!
+  messages: [Message!]!
+}
+
+type Message {
+  id: ID! @id
+  body: String
+  author: User!
+}
